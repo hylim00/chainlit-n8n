@@ -1,0 +1,19 @@
+html[data-theme="light"] header img {
+  content: url("/public/logo_light.svg") !important;
+  width: 150px !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* Logo default untuk DARK MODE */
+html[data-theme="dark"] header img {
+  content: url("/public/logo_dark.svg") !important;
+  width: 150px !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+.watermark {
+  display: none !important;
+}
+/* Menghilangkan watermark pada halaman */

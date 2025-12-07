@@ -1,0 +1,17 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# n8n data (local only)
+n8n_data/
+tmp_n8n/
+binary_data/
+postgres_data/
+
+# SQLite temp files
+*.db-journal
+
+# OS files
+.DS_Store
+Thumbs.db

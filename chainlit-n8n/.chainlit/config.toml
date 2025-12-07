@@ -1,0 +1,53 @@
+[project]
+user_env = []
+session_timeout = 3600
+user_session_timeout = 12960000
+cache = false
+persist_user_env = false
+mask_user_env = false
+allow_origins = ["*"]
+
+# ==================================================
+# 🔥 DATA PERSISTENCE — SQLITE (PALING MUDAH)
+# ==================================================
+[persistence]
+enabled = true
+provider = "sqlite"
+path = "asisten_k3_chat.db"
+
+# ==================================================
+# 🔥 AUTHENTICATION
+# ==================================================
+[authentication]
+enabled = true
+type = "password"
+
+[authentication.password]
+users = [
+  { email = "admin@k3app.com", password = "admin123" }
+]
+
+# ==================================================
+# 🔥 FEATURES
+# ==================================================
+[features]
+unsafe_allow_html = false
+latex = false
+user_message_autoscroll = true
+auto_tag_thread = true
+edit_message = true
+allow_thread_sharing = true
+
+# Panel history → WAJIB DI SINI
+show_conversation_list = true
+
+# ==================================================
+# 🔥 UI SETTINGS
+# ==================================================
+[UI]
+name = "Asisten-K3"
+cot = "full"
+alert_style = "classic"
+
+[meta]
+generated_by = "2.9.3"

@@ -1,0 +1,4 @@
+chainlit==2.1.0
+aiohttp
+python-dotenv
+wheel
